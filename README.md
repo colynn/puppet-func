@@ -1,6 +1,7 @@
 #puppet-func
+mailto：colynn.liu@gmail.com
 author: colynn.liu  
-twitter：@colynnliu
+
 ===========
 #Describe
 
@@ -10,6 +11,7 @@ puppet module  install func master, minion.
 #Using GIT
 git clone git://github.com/colynn/puppet-func.git
 
+#example
 Install func minion:
     $func::params::func_minion = true
     
