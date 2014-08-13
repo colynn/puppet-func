@@ -1,6 +1,6 @@
 #puppet-func
-author: colynn.liu
-mail to colynn.liu@gamil.com
+author: colynn.liu  
+twitter：@colynnliu
 ===========
 #Describe
 
