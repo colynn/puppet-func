@@ -1,13 +1,13 @@
-puppet-func
+#puppet-func
 author: colynn.liu
-mail to: colynn.liu@gamil.com
+mail to colynn.liu@gamil.com
 ===========
-Describe
+#Describe
 
 puppet module  install func master, minion.
 
-Installation
-Using GIT
+#Installation
+#Using GIT
 git clone git://github.com/colynn/puppet-func.git
 
 Install func minion:
