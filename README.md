@@ -1,6 +1,7 @@
 #puppet-func
-mailto：colynn.liu@gmail.com
+
 author: colynn.liu  
+mailto：colynn.liu@gmail.com
 
 ===========
 #Describe
