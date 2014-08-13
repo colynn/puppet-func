@@ -1,0 +1,9 @@
+<%= ERB.new(File.read(File.expand_path("_header.erb",File.dirname(file)))).result(binding) -%>
+
+# configuration for minions
+
+[main]
+certmaster = <%= scope.lookupvar('func::params::certmaster') %>
+certmaster_port = 51235
+log_level = DEBUG
+cert_dir = /etc/pki/certmaster
