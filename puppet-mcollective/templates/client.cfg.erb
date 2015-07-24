@@ -1,0 +1,25 @@
+<%= ERB.new(File.read(File.expand_path("_header.erb",File.dirname(file)))).result(binding) -%>
+
+main_collective = mcollective
+collectives = mcollective
+libdir = /usr/libexec/mcollective
+logfile = /var/log/mcollective.log
+loglevel = info
+daemonize = 1
+
+# Plugins
+securityprovider = psk
+plugin.psk = a36cd839414370e10fd281b8a38a4f48
+
+connector = activemq
+plugin.activemq.pool.size = 1
+plugin.activemq.pool.1.host = <%= @activemq_host %>
+plugin.activemq.pool.1.port = <%= @activemq_port %>
+plugin.activemq.pool.1.user = <%= @activemq_user %>
+plugin.activemq.pool.1.password = <%= @activemq_password %>
+plugin.activemq.heartbeat_interval = <%= @activemq_hb_interval %>
+plugin.activemq.max_reconnect_attempts = <%= @activemq_reconn_attempts %>
+
+# Facts
+factsource = yaml
+plugin.yaml = /etc/mcollective/facts.yaml
